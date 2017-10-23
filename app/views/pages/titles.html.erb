@@ -1,0 +1,19 @@
+<h1>Titles</h1>
+<p>Find me in app/views/pages/titles.html.erb</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @titles.each do |blog| %>
+      <tr>
+        <td><%= blog.title %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

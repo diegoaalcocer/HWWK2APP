@@ -1,0 +1,19 @@
+<h1>Authors</h1>
+<p>Find me in app/views/pages/authors.html.erb</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Author</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @authors.each do |blog| %>
+      <tr>
+        <td><%= blog.author %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
